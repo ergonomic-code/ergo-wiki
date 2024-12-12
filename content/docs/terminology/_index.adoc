@@ -1,0 +1,15 @@
+---
+title: Терминология
+type: docs
+weight: 200618
+---
+
+:source-highlighter: rouge
+:rouge-theme: github
+:icons: font
+:sectlinks:
+:toc:
+:toc-levels: 6
+:toc-title: Содержание
+
+Перечень и определение терминов, используемых в Эрговики.

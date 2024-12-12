@@ -1,0 +1,17 @@
+languageCode = 'ru-ru'
+baseUrl = 'https://ergonomic-code.github.io/ergo-wiki'
+title = 'Эргономичный подход'
+theme = 'hugo-book'
+
+[security]
+  [security.exec]
+    allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$', 'asciidoctor']
+
+[markup]
+  [markup.asciidocExt]
+    backend = 'html5'
+
+[params]
+  custom_css = ["css/github.css"]
+  BookTheme = 'auto'
+  BookToC = true

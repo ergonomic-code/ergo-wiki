@@ -1,0 +1,15 @@
+---
+title: Реализации операций
+type: docs
+weight: 500
+---
+
+:source-highlighter: rouge
+:rouge-theme: github
+:icons: font
+:sectlinks:
+:toc:
+:toc-levels: 6
+:toc-title: Содержание
+
+Паттерны реализации операций системы

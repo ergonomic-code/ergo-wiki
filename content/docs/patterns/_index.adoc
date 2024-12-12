@@ -1,0 +1,12 @@
+---
+title: Шаблоны
+type: docs
+weight: 750
+---
+
+:source-highlighter: rouge
+:rouge-theme: github
+:icons: font
+:sectlinks:
+
+Шаблоны Эргономичного подхода

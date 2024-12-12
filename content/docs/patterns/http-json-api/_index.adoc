@@ -1,0 +1,17 @@
+---
+title: Проектирование HTTP/JSON (REST) API
+type: docs
+weight: 750
+---
+
+:source-highlighter: rouge
+:rouge-theme: github
+:icons: font
+:sectlinks:
+:toc:
+:toc-levels: 6
+:toc-title: Содержание
+
+Паттерны проектирования HTTP/JSON (REST) API.
+
+Смотри также книгу https://twirl.github.io/The-API-Book/API.ru.html[The API].
