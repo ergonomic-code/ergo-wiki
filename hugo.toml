@@ -1,11 +1,17 @@
-languageCode = 'ru-ru'
+defaultContentLanguage = 'ru'
 baseUrl = 'https://ergonomic-code.github.io/ergo-wiki'
 title = 'Эргономичный подход'
 theme = 'hugo-book'
+enableGitInfo = true
+
+[languages]
+  [languages.ru]
+    languageCode = 'ru-RU'
+    languageDirection = 'ltr'
 
 [security]
   [security.exec]
-    allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$', 'asciidoctor']
+    allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$', 'asciidoctor', 'git']
 
 [markup]
   [markup.asciidocExt]
@@ -15,3 +21,7 @@ theme = 'hugo-book'
   custom_css = ["css/github.css"]
   BookTheme = 'auto'
   BookToC = true
+  BookRepo = 'https://github.com/ergonomic-code/ergo-wiki'
+  BookCommitPath = 'commit'
+  BookEditPath = 'edit/master'
+  BookDateFormat = '02 January 2006'
