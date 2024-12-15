@@ -2,6 +2,7 @@
 title: Терминология
 type: docs
 weight: 500
+bookCollapseSection: true
 ---
 
 :source-highlighter: rouge
@@ -12,4 +13,4 @@ weight: 500
 :toc-levels: 6
 :toc-title: Содержание
 
-Перечень и определение терминов, используемых в Эрговики.
+Перечень и определение терминов, используемых в Эргономичном подходе.

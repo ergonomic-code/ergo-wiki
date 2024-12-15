@@ -2,6 +2,7 @@
 title: Реализация операций
 type: docs
 weight: 500
+bookCollapseSection: true
 ---
 
 :source-highlighter: rouge

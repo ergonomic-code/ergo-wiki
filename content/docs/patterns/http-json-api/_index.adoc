@@ -2,6 +2,7 @@
 title: Проектирование HTTP/JSON (REST) API
 type: docs
 weight: 750
+bookCollapseSection: true
 ---
 
 :source-highlighter: rouge

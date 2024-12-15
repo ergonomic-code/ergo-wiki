@@ -2,6 +2,7 @@
 title: Работа с РСУБД
 type: docs
 weight: 875
+bookCollapseSection: true
 ---
 
 :source-highlighter: rouge
