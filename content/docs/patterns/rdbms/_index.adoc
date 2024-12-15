@@ -1,7 +1,7 @@
 ---
-title: Реализация операций
+title: Работа с РСУБД
 type: docs
-weight: 500
+weight: 875
 ---
 
 :source-highlighter: rouge
@@ -12,4 +12,4 @@ weight: 500
 :toc-levels: 6
 :toc-title: Содержание
 
-Паттерны реализации операций системы
+Паттерны работы с реляционными СУБД.

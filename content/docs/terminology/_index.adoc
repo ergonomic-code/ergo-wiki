@@ -1,7 +1,7 @@
 ---
 title: Терминология
 type: docs
-weight: 200618
+weight: 500
 ---
 
 :source-highlighter: rouge
