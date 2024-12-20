@@ -1,6 +1,6 @@
 defaultContentLanguage = 'ru'
 baseUrl = 'https://ergowiki.azhidkov.pro'
-title = 'Эргономичный подход '
+title = 'Эргономичный подход.'
 theme = 'hugo-book'
 enableGitInfo = true
 
