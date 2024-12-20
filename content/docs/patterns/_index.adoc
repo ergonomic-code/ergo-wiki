@@ -2,7 +2,7 @@
 title: Шаблоны
 type: docs
 weight: 750
-bookCollapseSection: true
+bookcollapsesection: true
 ---
 
 :source-highlighter: rouge

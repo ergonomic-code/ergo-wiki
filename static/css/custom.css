@@ -87,3 +87,8 @@ table{border-collapse:collapse;border-spacing:0}
   float: right;
   margin-left: 2em;
 }
+
+/* вертикальная отбивка в конце статьи*/
+footer.book-footer {
+    margin-bottom: 10em
+}

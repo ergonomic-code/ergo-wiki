@@ -1,0 +1,44 @@
+---
+title: Эргономичная архитектура (v3.0.0)
+type: docs
+weight: 875
+---
+
+:source-highlighter: rouge
+:rouge-theme: github
+:icons: font
+:sectlinks:
+:imagesdir: /ergo-wiki/docs/models/images
+
+* https://azhidkov.pro/posts/21/10/211018-ergo-approach-post/[Структура эргономичных программ]
+* https://azhidkov.pro/posts/21/09/210925-maintanable-arch/[Архитектура ориентированная на трансформацию]
+* https://azhidkov.pro/posts/23/12/project-e-dev-guideline/[Гайдлайн разработчика Проекта Э]
+* https://azhidkov.pro/posts/23/06/ergo-structure-v3/[Эргономичная структура программ в3]
+* https://github.com/ergonomic-code/Trainer-Advisor[Trainer-Advisor]
+* https://github.com/ergonomic-code/Project-Mariotte[Project-Mariotte]
+
+== Визуализации
+
+.Вариант визуализации №1
+image::efa1.drawio.svg[]
+
+.Вариант визуализации №2
+image::efa2.drawio.svg[]
+
+.Вариант визуализации №3
+image::efa3.drawio.svg[]
+
+.Вариант визуализации №4
+image::efa4.drawio.svg[]
+
+.Вариант визуализации №5
+image::efa5.drawio.svg[]
+
+.Вариант визуализации №6
+image::efa6.drawio.svg[]
+
+.Вариант визуализации №7
+image::efa7.drawio.svg[]
+
+.Вариант визуализации №8
+image::efa8.jpg[]

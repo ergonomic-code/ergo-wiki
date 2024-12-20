@@ -1,0 +1,13 @@
+---
+title: Spring Data JDBC
+type: docs
+weight: 625
+bookcollapsesection: true
+---
+
+:source-highlighter: rouge
+:rouge-theme: github
+:icons: font
+:sectlinks:
+
+Шаблоны проектирования и реализации агрегатов на базе Spring Data JDBC
