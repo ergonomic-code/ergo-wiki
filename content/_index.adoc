@@ -8,7 +8,7 @@ type: docs
 :icons: font
 :sectanchors:
 :toc:
-:imagesdir: /ergo-wiki/docs/images
+:imagesdir: /ergo-docs/images
 
 == Об Эргономичном подходе
 

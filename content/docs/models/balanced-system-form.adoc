@@ -8,7 +8,7 @@ weight: 625
 :rouge-theme: github
 :icons: font
 :sectlinks:
-:imagesdir: /ergo-wiki/docs/models/images
+:imagesdir: /ergo-docs/models/images
 
 * Структурный дизайн. Древний секрет простого и быстрого кода. (https://jokerconf.com/talks/f9b11eab0fc14bc2b2dc7c3ad62834d0/?referer=%2Fpersons%2F5f0fcf0f3fe443b5a15e994409da806d%2F[доклад] и https://azhidkov.pro/posts/24/11/structured-design/[пост])
 * https://azhidkov.pro/posts/23/12/project-e-dev-guideline/[Гайдлайн разработчика Проекта Э]
