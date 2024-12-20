@@ -8,6 +8,6 @@ weight: 925
 :rouge-theme: github
 :icons: font
 :sectlinks:
-:imagesdir: /ergo-docs/models/images
+:imagesdir: /docs/models/images
 
 см. https://azhidkov.pro/posts/24/03/trainer-advisor-testing-theory/[Тестирование Trainer Advisor: теория]

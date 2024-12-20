@@ -8,7 +8,7 @@ weight: 875
 :rouge-theme: github
 :icons: font
 :sectlinks:
-:imagesdir: /ergo-docs/models/images
+:imagesdir: /docs/models/images
 
 * https://azhidkov.pro/posts/21/10/211018-ergo-approach-post/[Структура эргономичных программ]
 * https://azhidkov.pro/posts/21/09/210925-maintanable-arch/[Архитектура ориентированная на трансформацию]
