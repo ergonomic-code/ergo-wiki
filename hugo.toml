@@ -3,6 +3,7 @@ baseUrl = 'https://ergowiki.azhidkov.pro'
 title = 'Эргономичный подход.'
 theme = 'hugo-book'
 enableGitInfo = true
+images = [ 'logo.svg' ]
 
 [languages]
   [languages.ru]
