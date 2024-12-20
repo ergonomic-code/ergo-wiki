@@ -1,6 +1,6 @@
 defaultContentLanguage = 'ru'
 baseUrl = 'https://ergowiki.azhidkov.pro'
-title = 'Эргономичный подход.'
+title = 'Эргономичный подход'
 theme = 'hugo-book'
 enableGitInfo = true
 
@@ -20,7 +20,7 @@ enableGitInfo = true
 [params]
   custom_css = ["css/github.css"]
   images = [ 'logo.png' ]
-  
+
   BookTheme = 'auto'
   BookToC = true
   BookRepo = 'https://github.com/ergonomic-code/ergo-wiki'
