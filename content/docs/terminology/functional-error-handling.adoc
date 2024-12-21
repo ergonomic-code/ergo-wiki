@@ -1,7 +1,6 @@
 ---
 title: Функциональный (типизированный) подход к обработке ошибок (v0.1.0)
 type: docs
-weight: 222115
 ---
 
 :source-highlighter: rouge
