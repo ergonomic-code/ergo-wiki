@@ -1,5 +1,5 @@
 ---
-title: Принципы автоматизации тестирования
+title: Принципы тестирования (v1.0.0)
 type: docs
 weight: 560
 bookcollapsesection: true
