@@ -1,5 +1,5 @@
 ---
-title: Принципы тестирования (v1.0.0)
+title: Принципы тестирования
 type: docs
 weight: 560
 bookcollapsesection: true

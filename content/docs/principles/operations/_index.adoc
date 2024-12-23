@@ -1,5 +1,5 @@
 ---
-title: Принципы проектирования поведения системы (v1.0.0)
+title: Принципы проектирования поведения системы
 type: docs
 weight: 625
 bookcollapsesection: true

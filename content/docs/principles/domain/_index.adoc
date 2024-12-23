@@ -1,5 +1,5 @@
 ---
-title: Принципы проектирования домена (v1.0.0)
+title: Принципы проектирования домен 
 type: docs
 weight: 625
 bookcollapsesection: true
