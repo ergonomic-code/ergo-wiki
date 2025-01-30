@@ -10,6 +10,6 @@ weight: 500
 :sectlinks:
 :imagesdir: /docs/methodics/images
 
-* https://azhidkov.pro/posts/23/11/immutable-relation-data-model-v2/[Нотация описания неизменяемой модели данных]
-* https://azhidkov.pro/posts/22/04/220401-aggregates/[Агрегаты]
-* https://rutube.ru/video/549bd9606eeaf60b8c631a9e2cb277da/?t=1940&r=plemwd[https://rutube.ru/video/549bd9606eeaf60b8c631a9e2cb277da/?t=1940&r=plemwd]
+* Пост https://azhidkov.pro/posts/23/11/immutable-relation-data-model-v2/[Нотация описания неизменяемой модели данных]
+* Пост https://azhidkov.pro/posts/22/04/220401-aggregates/[Агрегаты]
+* Доклад https://rutube.ru/video/549bd9606eeaf60b8c631a9e2cb277da/?r=plemwd[Функциональная архитектура и Spring Data JDBC. 4 года в проде, полёт отличный]

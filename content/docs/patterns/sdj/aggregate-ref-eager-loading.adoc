@@ -9,5 +9,5 @@ weight: 500
 :icons: font
 :sectlinks:
 
-* https://rutube.ru/video/549bd9606eeaf60b8c631a9e2cb277da/?t=2039&r=plemwd[Функциональная архитектура и Spring Data JDBC. 4 года в проде, полёт отличный]
-* https://github.com/ergonomic-code/Project-Moby[Project Moby]
+* Доклад https://rutube.ru/video/549bd9606eeaf60b8c631a9e2cb277da/?t=2039&r=plemwd[Функциональная архитектура и Spring Data JDBC. 4 года в проде, полёт отличный]
+* Проект https://github.com/ergonomic-code/Project-Moby[Project Moby]
