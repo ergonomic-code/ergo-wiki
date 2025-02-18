@@ -2,7 +2,6 @@
 title: Эргономичная архитектура (v3.0.0)
 type: docs
 weight: 875
-bookHidden: true
 ---
 
 :source-highlighter: rouge
