@@ -533,6 +533,8 @@ https://azhidkov.pro/posts/25/01/you-dont-need-ca-and-dip-probably/#_%D0%BF%D1%8
 Формальной методики у меня прямо сейчас в голове нет.
 Скорее всего, можно за основу взять структурный дизайн и построение DFD-диаграммы.
 Также можно вдохновиться идеями Stratified Design в интерпретации Норманда и немца с непроизносимой фамилией (IODA Architecture, Integration Operation Segregation Principle) и барьера абстракции из SICP.
+Ещё у Марка Симана есть интересная идея фрактального архитектуры в https://www.amazon.com/Code-That-Fits-Your-Head/dp/0137464401[Code That Fits in Your Head : Heuristics for Software Engineering].
+Ну и с классикой типа https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882[Чистого кода] и https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670[Совершенного кода] тоже стоит ознакомиться.
 
 Но вообще, кажется что-то в таком духе должно сработать:
 
