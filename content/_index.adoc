@@ -76,5 +76,5 @@ image::threads-reengineering.png[link={imagesdir}/threads-reengineering.png]
 
 Также у меня есть два проекта с открытыми исходным кодом, сделанных по Эргономичному подходу:
 
-* https://github.com/ergonomic-code/Trainer-Advisor[Trainer Adviser] — некоммерческий, но настоящий и относительно большой (4К строк кода, 15 таблиц) с одним реальным пользователем;
+* https://github.com/ergonomic-code/Trainer-Advisor[Trainer Adviser] — некоммерческий, но настоящий и относительно большой (16К строк Kotlin-кода, 17 таблиц) с двумя реальным пользователями;
 * https://github.com/ergonomic-code/Project-Mariotte[Project Mariotte] — минимальный демонстрационный проект.
