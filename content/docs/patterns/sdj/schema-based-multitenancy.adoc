@@ -138,9 +138,9 @@ class SetTenantOnJmsMessageAspect(
         }
 
         // При работе с JMS в транзакционном режиме подключение открывается где-то в кишках Спринга до этого места и, соответственно,
-        // без тенанта проставленного в multiTenantsService.
-        // По-хорошему, наверное, надо найти способ встроить туда (но не понятно разумно ли там будет пытаться выковырить
-        // тенанта из сообщения)
+        // без тенанта проставленного в currentTenantsService.
+        // По-хорошему, наверное, надо найти способ встроиться туда, но не понятно, разумно ли там будет пытаться выковырить
+        // тенанта из сообщения
 
         // Копипаста из JdbcTemplate
         val con = DataSourceUtils.getConnection(dataSource) 
@@ -180,7 +180,7 @@ internal class MultiTenantsDataSource(
 
     private val log = LoggerFactory.getLogger(javaClass)
 
-    override fun getConnection(): Connection? {
+    override fun getConnection(): Connection {
         val conn = delegate.connection
         conn.schema = currentTenantService.getCurrentTenant()
         log.debug("Returning connection with schema: {}", conn.schema)
