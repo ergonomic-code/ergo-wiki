@@ -58,9 +58,9 @@ class CurrentTenantService {
             .also { log.debug("Current tenant: {}", it) }
     }
 
- setCurrentTenant(tenant: String?) {
+    fun setCurrentTenant(tenant: String?) {
         log.debug("Setting current tenant to {}", tenant)
-set(tenant)
+        currentTenant.set(tenant)
     }
 
     companion object {
