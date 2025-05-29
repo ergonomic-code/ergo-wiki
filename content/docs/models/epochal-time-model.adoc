@@ -11,3 +11,5 @@ weight: 875
 
 * https://www.youtube.com/watch?v=ScEPu1cs4l0[Are We There Yet - Rich Hickey]
 * https://donnywinston.com/posts/the-materials-paradigm-and-epochal-time/[The Materials Paradigm and Epochal Time]
+* https://clojure.org/about/state[Values and Change: Clojure’s approach to Identity and State]
+* https://ericnormand.me/mini-guide/clojure-atom[Clojure Atom: A Complete Guide]
