@@ -4,5 +4,3 @@ type: docs
 weight: 125
 bookHref: "/docs/about-ea"
 ---
-
-Редирект на индексную страницу
