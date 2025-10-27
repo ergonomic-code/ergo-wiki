@@ -45,6 +45,7 @@ weight: 500
 
 См. также:
 
+* https://blog.ploeh.dk/2024/01/29/error-categories-and-category-errors/[Error categories and category errors]
 * https://eiriktsarpalis.wordpress.com/2017/02/19/youre-better-off-using-exceptions/[You’re better off using Exceptions]
 * https://learn.microsoft.com/en-us/dotnet/fsharp/style-guide/conventions#do-not-use-monadic-error-handling-to-replace-exceptions[Do not use monadic error handling to replace exceptions]
 
