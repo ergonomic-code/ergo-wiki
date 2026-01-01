@@ -1,5 +1,5 @@
 ---
-title: Маппинг исключений на DataAccessException (v1.0.0)
+title: Маппинг исключений на DataAccessException (в версиях до 4) (v1.0.0)
 type: docs
 weight: 500
 ---
@@ -8,6 +8,11 @@ weight: 500
 :rouge-theme: github
 :icons: font
 :sectlinks:
+
+[WARNING]
+====
+В Spring Data JDBC 4 DbActionExecutionException https://github.com/spring-projects/spring-data-relational/pull/1956[удалили] и маппинг более не актуален.
+====
 
 По непонятным причинам и вопреки https://docs.spring.io/spring-framework/reference/data-access/dao.html#dao-exceptions[Spring-овой консистентной иерархии исключений], в случае ошибки SDJ выбрасывает кастомный DbActionExecutionException вместо DataAccessException.
 
