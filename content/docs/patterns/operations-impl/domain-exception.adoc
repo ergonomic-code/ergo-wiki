@@ -62,16 +62,16 @@ open class DomainException(
                 ?.camelToKebabCase()
                 ?.removeSuffix("-exception")
 
-        private fun String.camelToKebabCase(): String = buildString(length + 8) {
-            this@camelToKebabCase.forEachIndexed { index, ch ->
-                val isUpper = ch in 'A'..'Z'
-                if (isUpper && index != 0) append('-')
-                append(if (isUpper) ch.lowercaseChar() else ch)
-            }
-        }
-
     }
 
+}
+
+private fun String.camelToKebabCase(): String = buildString(length + 8) {
+    this@camelToKebabCase.forEachIndexed { index, ch ->
+        val isUpper = ch in 'A'..'Z'
+        if (isUpper && index != 0) append('-')
+        append(if (isUpper) ch.lowercaseChar() else ch)
+    }
 }
 ----
 
@@ -108,7 +108,7 @@ class EntityNotFoundException(
     val type: String,
     val keys: List<Pair<String, Any?>>,
     override val message: String = "Entity of type $type not found by ${keys.format()}",
-    errorCode: String = "resource-not-found",
+    errorCode: String = "entity-not-found",
     cause: Throwable? = null
 ) : DomainException(
     message,
