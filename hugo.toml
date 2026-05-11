@@ -17,6 +17,17 @@ enableGitInfo = true
   [markup.asciidocExt]
     backend = 'html5'
 
+[menu]
+[[menu.after]]
+  name = "Канал в Telegram"
+  url = "https://t.me/ergonomic_code"
+  weight = 10
+
+[[menu.after]]
+  name = "Канал в Max"
+  url = "https://max.ru/id544512614458_biz"
+  weight = 20
+
 [params]
   custom_css = ["css/github.css"]
   images = [ 'logo.png' ]
