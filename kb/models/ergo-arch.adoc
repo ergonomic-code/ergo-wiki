@@ -8,7 +8,7 @@ weight: 875
 :rouge-theme: github
 :icons: font
 :sectlinks:
-:imagesdir: /docs/models/images
+:imagesdir: images
 :toc:
 
 [WARNING]
@@ -18,7 +18,7 @@ weight: 875
 
 [NOTE]
 ====
-Предыдущие черновики и диаграммы link:++{{<ref "/docs/models/ergo-arch--1">}}++[здесь].
+Предыдущие черновики и диаграммы xref:ergo-arch\--1.adoc[здесь].
 ====
 
 == Введение
@@ -312,9 +312,9 @@ https://github.com/ergonomic-code/Trainer-Advisor/blob/8f098ffccb27252f4c35f973c
 [cols="50%,50%"]
 |===
 a|
-+++<div style="text-align:center"><a href="../images/ergo-arch-model-simple-operation.drawio.svg"><img src="../images/ergo-arch-model-simple-operation.drawio.svg" alt="Simple" style="max-width:100%;height:auto;display:block;margin:0 auto;"></a></div>+++
++++<div style="text-align:center"><a href="images/ergo-arch-model-simple-operation.drawio.svg"><img src="images/ergo-arch-model-simple-operation.drawio.svg" alt="Simple" style="max-width:100%;height:auto;display:block;margin:0 auto;"></a></div>+++
 a|
-+++<div style="text-align:center"><a href="../images/ergo-arch-model-complex-operation.drawio.svg"><img src="../images/ergo-arch-model-complex-operation.drawio.svg" alt="Complex" style="max-width:100%;height:auto;display:block;margin:0 auto;"></a></div>+++
++++<div style="text-align:center"><a href="images/ergo-arch-model-complex-operation.drawio.svg"><img src="images/ergo-arch-model-complex-operation.drawio.svg" alt="Complex" style="max-width:100%;height:auto;display:block;margin:0 auto;"></a></div>+++
 |===
 
 Здесь на левой диаграмме представлена простая CRUD-операция, которая просто передаёт данные в какой-то простой ресурс, например в таблицу БД.

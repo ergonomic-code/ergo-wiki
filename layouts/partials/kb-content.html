@@ -1,0 +1,34 @@
+{{- /* Преобразуем только href/src настоящих HTML-тегов.
+      Пути в КБ разрешаются относительно исходного документа. */ -}}
+{{- $page := . -}}
+{{- $html := .Content | string -}}
+{{- if .File -}}
+  {{- range findRE `<(?:a|img)\s[^>]*>` $html -}}
+    {{- $tag := . -}}
+    {{- $updated := $tag -}}
+    {{- range findRE `(?:href|src)="[^"]*"` $tag -}}
+      {{- $attr := . -}}
+      {{- $value := replaceRE `^[^=]+="(.*)"$` `$1` $attr -}}
+      {{- if and $value (not (findRE `^(?:[a-zA-Z][a-zA-Z0-9+.-]*:|/|#)` $value)) -}}
+        {{- $parts := split $value "#" -}}
+        {{- $path := index $parts 0 -}}
+        {{- $fragment := "" -}}
+        {{- if gt (len $parts) 1 -}}{{- $fragment = printf "#%s" (index $parts 1) -}}{{- end -}}
+        {{- $source := path.Join "/" $page.File.Dir $path -}}
+        {{- $url := "" -}}
+        {{- if strings.HasSuffix $path ".adoc" -}}
+          {{- with $page.Site.GetPage $source -}}
+            {{- $url = .RelPermalink -}}
+          {{- else -}}
+            {{- errorf "Неразрешённая ссылка %s в %s" $value $page.File.Path -}}
+          {{- end -}}
+        {{- else -}}
+          {{- $url = relURL (strings.TrimPrefix "/" $source) -}}
+        {{- end -}}
+        {{- $updated = replace $updated $attr (replace $attr $value (printf "%s%s" $url $fragment)) -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $html = replace $html $tag $updated -}}
+  {{- end -}}
+{{- end -}}
+{{- return ($html | safeHTML) -}}

@@ -38,3 +38,27 @@ enableGitInfo = true
   BookCommitPath = 'commit'
   BookEditPath = 'edit/master'
   BookDateFormat = '02 January 2006'
+
+# КБ и служебные страницы сайта сохраняют прежние URL.
+[[module.mounts]]
+source = 'kb'
+target = 'content/docs'
+excludeFiles = ['**/images/**']
+[[module.mounts]]
+source = 'content'
+target = 'content'
+[[module.mounts]]
+source = 'kb/models/images'
+target = 'static/docs/models/images'
+[[module.mounts]]
+source = 'kb/images'
+target = 'static/docs/images'
+[[module.mounts]]
+source = 'kb/methodics/images'
+target = 'static/docs/methodics/images'
+[[module.mounts]]
+source = 'static'
+target = 'static'
+
+[markup.asciidocExt.attributes]
+relfilesuffix = '.adoc'

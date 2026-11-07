@@ -12,7 +12,7 @@ weight: 500
 
 `DomainException` — базовый класс для ожидаемых невосстановимых ошибок.
 
-См. также link:++{{<ref "/docs/patterns/operations-impl/error-handling">}}++[Обработка ошибок].
+См. также xref:error-handling.adoc[Обработка ошибок].
 
 == Зачем нужен базовый класс
 
@@ -137,5 +137,5 @@ class EntityNotFoundException(
 
 == Связанные паттерны
 
-. link:++{{<ref "/docs/patterns/http-json-api/status-code-choosing">}}++[Правила выбора статуса ответа]
-. link:++{{<ref "/docs/patterns/http-json-api/error-response-body-format">}}++[Формат тела ошибочного ответа]
+. xref:../http-json-api/status-code-choosing.adoc[Правила выбора статуса ответа]
+. xref:../http-json-api/error-response-body-format.adoc[Формат тела ошибочного ответа]

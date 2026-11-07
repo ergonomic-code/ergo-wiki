@@ -9,7 +9,7 @@ type: docs
 :icons: font
 :sectanchors:
 :toc:
-:imagesdir: /docs/images
+:imagesdir: ../images
 
 _Сложное CRUD-приложение — это приложение, в котором бизнес-требования часто выглядят «простыми CRUD-операциями», но сложность разработки и сопровождения определяется не доменными инвариантами, а моделью данных, эффектами (IO) и интеграциями._
 
@@ -54,5 +54,5 @@ image::ta-schedule-call-graph.png[]
 
 == Дополнительные материалы
 
-* link:++{{<ref "docs/models/effects-diagram.adoc">}}++[Диаграмма эффектов]
-* link:++{{<ref "docs/models/ergo-arch.adoc">}}++[Эргономичная архитектура]
+* xref:../models/effects-diagram.adoc[Диаграмма эффектов]
+* xref:../models/ergo-arch.adoc[Эргономичная архитектура]

@@ -53,4 +53,4 @@ bookcollapsesection: true
 ... https://spring.io/blog/2023/08/31/this-is-the-beginning-of-the-end-of-the-n-1-problem-introducing-single-query[This is the Beginning of the End of the N+1 Problem: Introducing Single Query Loading.]
 .. https://www.youtube.com/watch?v=WYa9n0F4CRM&pp=ygUQc3ByaW5nIGRhdGEgamRiYw%3D%3D[Доклад] от автора о миграции с JPA на SDJ и про проектирование агрегатов
 .. Мои посты про https://azhidkov.pro/posts/22/04/220401-aggregates/[агрегаты] и https://azhidkov.pro/posts/23/11/immutable-relation-data-model-v2/[неизменяемую модель данных]
-. Возможно что-то из link:++{{<ref "/docs/models/immutable-relationd-data-model/">}}++[этих черновиков] поможет уложить информационную модель (модель модели данных) Spring Data JDBC
+. Возможно что-то из xref:../../models/immutable-relationd-data-model.adoc[этих черновиков] поможет уложить информационную модель (модель модели данных) Spring Data JDBC

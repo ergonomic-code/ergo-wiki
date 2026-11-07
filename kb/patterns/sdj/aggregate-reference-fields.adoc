@@ -12,4 +12,4 @@ weight: 500
 Ссылки на другие агрегаты должны быть реализованы в виде полей тип AggregateReference.
 Это позволит, при необходимости подтянуть ссылаемый агрегат в это поле.
 
-см. link:++{{<ref "/docs/patterns/sdj/aggregate-ref-eager-loading">}}++[Энергичная загрузка агрегатов]
+см. xref:aggregate-ref-eager-loading.adoc[Энергичная загрузка агрегатов]
