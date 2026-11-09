@@ -1,0 +1,3 @@
+{{- $repoRoot := path.Dir hugo.WorkingDir -}}
+{{- $bookFilePath := strings.TrimPrefix (printf "%s/" $repoRoot) .Page.File.Filename -}}
+{{- .Site.Params.BookRepo }}/{{ .Site.Params.BookEditPath }}/{{ $bookFilePath -}}

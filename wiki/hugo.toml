@@ -41,20 +41,20 @@ enableGitInfo = true
 
 # КБ и служебные страницы сайта сохраняют прежние URL.
 [[module.mounts]]
-source = 'kb'
+source = '../kb'
 target = 'content/docs'
 excludeFiles = ['**/images/**']
 [[module.mounts]]
 source = 'content'
 target = 'content'
 [[module.mounts]]
-source = 'kb/models/images'
+source = '../kb/models/images'
 target = 'static/docs/models/images'
 [[module.mounts]]
-source = 'kb/images'
+source = '../kb/images'
 target = 'static/docs/images'
 [[module.mounts]]
-source = 'kb/methodics/images'
+source = '../kb/methodics/images'
 target = 'static/docs/methodics/images'
 [[module.mounts]]
 source = 'static'

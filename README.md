@@ -4,17 +4,21 @@
 Статьи сохраняют front matter и `_index.adoc`; ссылки между ними задаются относительными `xref`.
 Изображения находятся рядом со статьями.
 
-`content/` содержит главную страницу и служебные страницы сайта об авторе и о вики.
+`wiki/content/` содержит главную страницу и служебные страницы сайта об авторе и о вики.
 Hugo mounts объединяют их с КБ, сохраняя прежние URL `/docs/`.
-Шаблон `layouts/partials/kb-content.html` разрешает относительные ссылки КБ через Hugo и переводит пути изображений в URL сайта.
+Шаблон `wiki/layouts/partials/kb-content.html` разрешает относительные ссылки КБ через Hugo и переводит пути изображений в URL сайта.
 Он применяется только к документам из `kb/`.
+
+`wiki/` содержит конфигурацию Hugo, тему, шаблоны, статику и скрипты сайта.
+`workbench/` — локальные рабочие материалы, исключённые из Git.
+Workflow публикации находится в `.github/workflows/`.
 
 ## Разработка
 
 Нужны Hugo extended 0.140.0 (версия CI), Ruby, Asciidoctor и Rouge.
 
 ```bash
-hugo server --disableFastRender --renderToMemory
+hugo server --source wiki --disableFastRender --renderToMemory
 ```
 
 После изменения статьи или изображения браузер обновляется автоматически.
@@ -23,8 +27,8 @@ hugo server --disableFastRender --renderToMemory
 ## Проверка и публикация
 
 ```bash
-hugo --minify
-python3 scripts/check_wiki.py public
+hugo --source wiki --minify
+python3 wiki/scripts/check_wiki.py wiki/public
 ```
 
 Проверяются внутренние ссылки и изображения в статьях, наличие целевых файлов и якорей.

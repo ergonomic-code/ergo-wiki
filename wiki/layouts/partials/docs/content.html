@@ -1,6 +1,6 @@
 {{- $content := .Content -}}
 {{- with .File -}}
-  {{- if strings.HasPrefix .Filename (printf "%s/" (path.Join hugo.WorkingDir "kb")) -}}
+  {{- if strings.HasPrefix .Filename (printf "%s/" (path.Join hugo.WorkingDir "../kb")) -}}
     {{- $content = partial "kb-content" $ -}}
   {{- end -}}
 {{- end -}}

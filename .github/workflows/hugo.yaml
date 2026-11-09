@@ -59,6 +59,7 @@ jobs:
           fetch-depth: 0
 
       - name: Wrap Asciidoctor
+        working-directory: wiki
         run: |
           . ./wrap_asciidoc.sh
           asciidoctor --version
@@ -67,8 +68,10 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
       - name: Install Node.js dependencies
+        working-directory: wiki
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Build with Hugo
+        working-directory: wiki
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
@@ -77,11 +80,12 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Check internal links
+        working-directory: wiki
         run: python3 scripts/check_wiki.py public --base-url "${{ steps.pages.outputs.base_url }}/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          path: ./wiki/public
 
   # Deployment job
   deploy:

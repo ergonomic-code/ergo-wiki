@@ -1,3 +1,5 @@
-/public
-/resources/_gen
+/wiki/public
+/wiki/resources/_gen
+/wiki/azhidkov.pro
 .hugo_build.lock
+/workbench
