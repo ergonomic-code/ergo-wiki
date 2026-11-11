@@ -42,8 +42,6 @@ jobs:
       - name: Setup Asciidoctor
         run: |
           gem install asciidoctor
-          gem install asciidoctor-html5s
-          gem install asciidoctor-diagram
           gem install rouge
 
       - name: Install Hugo CLI
@@ -57,12 +55,6 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
-
-      - name: Wrap Asciidoctor
-        working-directory: wiki
-        run: |
-          . ./wrap_asciidoc.sh
-          asciidoctor --version
 
       - name: Setup Pages
         id: pages

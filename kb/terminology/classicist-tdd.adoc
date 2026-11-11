@@ -9,7 +9,9 @@ type: docs
 :sectanchors:
 :toc:
 
+// tag::definition[]
 _Классическая школа Test-Driven Development — подход к TDD, в котором тесты пишутся через публичное API и проверяют наблюдаемое поведение системы (в отличие от «лондонской школы», где акцент делается на проверке взаимодействий и использовании моков)._
+// end::definition[]
 
 * https://habr.com/ru/companies/jugru/articles/571126/[Школы юнит-тестирования]
 * https://martinfowler.com/articles/mocksArentStubs.html[Mocks Aren't Stubs]

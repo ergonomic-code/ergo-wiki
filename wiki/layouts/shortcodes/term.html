@@ -1,0 +1,20 @@
+{{- $id := .Get 0 -}}
+{{- $word := .Get 1 -}}
+{{- if or (not $id) (not $word) (not (findRE `^[a-z0-9]+(-[a-z0-9]+)*$` $id)) -}}
+  {{- errorf "Некорректный shortcode term в %s" .Page.File.Path -}}
+{{- end -}}
+{{- with site.GetPage (printf "/docs/terminology/%s.adoc" $id) -}}
+  {{- $matches := findRE `(?s)// tag::definition\[\]\s*\n.*?// end::definition\[\]` .RawContent -}}
+  {{- if ne (len $matches) 1 -}}
+    {{- errorf "В термине %s нужен ровно один фрагмент definition" $id -}}
+  {{- else -}}
+    {{- $definition := replaceRE `(?s)^// tag::definition\[\]\s*\n(.*?)// end::definition\[\]$` "$1" (index $matches 0) | strings.TrimSpace -}}
+    {{- if or (not $definition) (findRE `\n\s*\n` $definition) -}}
+      {{- errorf "Пустое или многопараграфное определение термина %s" $id -}}
+    {{- end -}}
+    {{- $rendered := .RenderString (dict "markup" "asciidoc" "display" "inline") $definition -}}
+    <span class="term-hint"><input class="term-hint__toggle" type="checkbox" aria-label="{{ $word }}: {{ $rendered | plainify }}"><span class="term-hint__trigger" aria-hidden="true">{{ $word }}</span><span class="term-hint__text">{{ $rendered }} <a href="{{ .RelPermalink }}">Подробнее</a></span></span>
+  {{- end -}}
+{{- else -}}
+  {{- errorf "Не найдена страница термина %s" $id -}}
+{{- end -}}
