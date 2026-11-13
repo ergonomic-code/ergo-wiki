@@ -15,7 +15,7 @@ Workflow публикации находится в `.github/workflows/`.
 
 ## Разработка
 
-Нужны Hugo extended 0.140.0 (версия CI), Ruby, Asciidoctor и Rouge.
+Нужны Hugo extended 0.167.0 (версия CI), Ruby, Asciidoctor и Rouge.
 
 ```bash
 hugo server --source wiki --disableFastRender --renderToMemory

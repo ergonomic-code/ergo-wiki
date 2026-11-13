@@ -6,8 +6,8 @@ enableGitInfo = true
 
 [languages]
   [languages.ru]
-    languageCode = 'ru-RU'
-    languageDirection = 'ltr'
+    locale = 'ru-RU'
+    direction = 'ltr'
 
 [security]
   [security.exec]
@@ -43,7 +43,7 @@ enableGitInfo = true
 [[module.mounts]]
 source = '../kb'
 target = 'content/docs'
-excludeFiles = ['**/images/**']
+files = ['! **/images/**']
 [[module.mounts]]
 source = 'content'
 target = 'content'
