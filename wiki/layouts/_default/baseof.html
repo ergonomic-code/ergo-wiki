@@ -1,3 +1,8 @@
+{{- $page := . -}}
+{{- if .IsHome -}}
+  {{- $page = .Site.GetPage "/docs/about-ea" -}}
+{{- end -}}
+{{- with $page -}}
 <!DOCTYPE html>
 <html lang="{{ default .Site.Language.Lang .Site.Language.Locale  }}" dir="{{ default "ltr" .Site.Language.Direction }}">
 <head>
@@ -45,6 +50,7 @@
   {{ partial "docs/inject/body" . }}
 </body>
 </html>
+{{- end -}}
 
 {{ define "menu" }}
   {{ partial "docs/menu" . }}
