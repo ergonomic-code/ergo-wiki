@@ -48,14 +48,20 @@ files = ['! **/images/**']
 source = 'content'
 target = 'content'
 [[module.mounts]]
-source = '../kb/models/images'
+source = '../kb/production-code/models/images'
 target = 'static/docs/models/images'
+[[module.mounts]]
+source = '../kb/production-code/models/images'
+target = 'static/docs/production-code/models/images'
 [[module.mounts]]
 source = '../kb/images'
 target = 'static/docs/images'
 [[module.mounts]]
-source = '../kb/methodics/images'
+source = '../kb/production-code/methodics/images'
 target = 'static/docs/methodics/images'
+[[module.mounts]]
+source = '../kb/production-code/methodics/images'
+target = 'static/docs/production-code/methodics/images'
 [[module.mounts]]
 source = 'static'
 target = 'static'

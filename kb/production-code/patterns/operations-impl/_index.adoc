@@ -1,0 +1,17 @@
+---
+title: Реализация операций
+type: docs
+url: /docs/patterns/operations-impl/
+weight: 500
+bookCollapseSection: true
+---
+
+:source-highlighter: rouge
+:rouge-theme: github
+:icons: font
+:sectlinks:
+:toc:
+:toc-levels: 6
+:toc-title: Содержание
+
+Паттерны реализации операций системы

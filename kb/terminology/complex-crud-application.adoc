@@ -56,5 +56,5 @@ image::ta-schedule-call-graph.png[]
 
 == Дополнительные материалы
 
-* xref:../models/effects-diagram.adoc[Диаграмма эффектов]
-* xref:../models/ergo-arch.adoc[Эргономичная архитектура]
+* xref:../production-code/models/effects-diagram.adoc[Диаграмма эффектов]
+* xref:../production-code/models/ergo-arch.adoc[Эргономичная архитектура]
