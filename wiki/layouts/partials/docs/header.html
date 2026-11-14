@@ -1,0 +1,13 @@
+<div class="flex justify-between book-header-row">
+  <label for="menu-control">
+    <img src="{{ "svg/menu.svg" | relURL }}" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3><a href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a></h3>
+
+  <label for="toc-control">
+    {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
+    <img src="{{ "svg/toc.svg" | relURL }}" class="book-icon" alt="Table of Contents" />
+    {{ end }}
+  </label>
+</div>

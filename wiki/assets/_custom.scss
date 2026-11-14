@@ -1,0 +1,24 @@
+@media screen and (max-width: $mobile-breakpoint) {
+  .book-header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    margin: (-$padding-16) (-$padding-16) $padding-16;
+    padding: $padding-16;
+    background: var(--body-background);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  .book-header-row {
+    align-items: center;
+  }
+
+  .book-header aside {
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+
+  .book-menu {
+    z-index: 3;
+  }
+}
